@@ -3,34 +3,51 @@
 ## 1. Traceroute
 
 Am implementat soluția iar aici este output-ul:
+(din cauza conexiunii la internet a masinii virtuale nu trece de IP-ul de RDS)
 
 ### Ruta către IP1
 ```
-IP11 - Oraș, Regiune, Țară
-IP12 - Oraș, Regiune, Țară
-IP13 - Oraș, Regiune, Țară
-...
-IP1N - Oraș, Regiune, Țară
+realestate.com.au : TTL -> 1
+172.8.1.1
+{'country': 'United States', 'region': 'KS', 'city': 'Topeka'}
+TTL -> 2
+10.0.2.2
+{}
+Socket timeout  timed out
 ```
 
 ### Ruta către IP2
 ```
-IP21 - Oraș, Regiune, Țară
-IP22 - Oraș, Regiune, Țară
-IP23 - Oraș, Regiune, Țară
-...
-IP2N - Oraș, Regiune, Țară
+google.com.au : TTL -> 1
+172.8.1.1
+{'country': 'United States', 'region': 'KS', 'city': 'Topeka'}
+TTL -> 2
+10.0.2.2
+{}
+Socket timeout  timed out
 ```
 
 ### Ruta către IP3
 ```
-IP31 - Oraș, Regiune, Țară
-IP32 - Oraș, Regiune, Țară
-IP33 - Oraș, Regiune, Țară
-...
-IP3N - Oraș, Regiune, Țară
+shack.co.za : TTL -> 1
+172.8.1.1
+{'country': 'United States', 'region': 'KS', 'city': 'Topeka'}
+TTL -> 2
+10.0.2.2
+{}
+Socket timeout  timed out
 ```
 
+### Ruta către IP4
+```
+rsvp.com.au : TTL -> 1
+172.8.1.1
+{'country': 'United States', 'region': 'KS', 'city': 'Topeka'}
+TTL -> 2
+10.0.2.2
+{}
+Socket timeout  timed out
+```
 
 ## 2. Reliable UDP
 
